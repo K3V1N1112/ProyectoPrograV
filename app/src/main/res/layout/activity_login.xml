@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagen2"
+    android:backgroundTint="#50FFFFFF"
+    android:backgroundTintMode="src_over"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="70dp"
+    android:paddingRight="16dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/lblTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playfairdisplay_bolditalic"
+        android:inputType="text"
+        android:text="@string/lbltittle"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:translationY="80dp" />
+
+    <TextView
+        android:id="@+id/lblUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playfairdisplay_bold"
+        android:inputType="text"
+        android:text="@string/lbluser"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:translationY="140dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playfairdisplay_bold"
+        android:hint="@string/txtuser"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="20sp"
+        android:translationY="150dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/lblPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playfairdisplay_bold"
+        android:inputType="text"
+        android:text="@string/lblpass"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:translationY="190dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playfairdisplay_bold"
+        android:hint="@string/txtpass"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="20sp"
+        android:translationY="200dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#168F29"
+        android:fontFamily="@font/playfairdisplay_black"
+        android:text="Iniciar Sesión"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:translationY="280dp" />
+
+    <TextView
+        android:id="@+id/lblPassRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playfairdisplay_bold"
+        android:inputType="text"
+        android:text="@string/lblpassrec"
+        android:textAlignment="textEnd"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:translationY="300dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imgBtnBack"
+        android:layout_width="78dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:translationX="-25dp"
+        android:translationY="-250dp"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        app:tint="#000000"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</LinearLayout>

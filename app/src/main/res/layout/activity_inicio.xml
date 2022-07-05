@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagen1"
+    android:backgroundTint="#50FFFFFF"
+    android:backgroundTintMode="src_over"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".InicioActivity">
+
+    <TextView
+        android:id="@+id/lblTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playfairdisplay_bolditalic"
+        android:inputType="text"
+        android:text="@string/lbltittle"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:translationY="50dp"
+        android:paddingTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#168F29"
+        android:fontFamily="@font/playfairdisplay_black"
+        android:text="Iniciar Sesión"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:translationX="-360dp"
+        android:translationY="300dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#168F29"
+        android:fontFamily="@font/playfairdisplay_black"
+        android:text="Registrarse"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:translationX="-350dp"
+        android:translationY="300dp" />
+
+    <TextView
+        android:id="@+id/lblInvite"
+        android:layout_width="364dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/playfairdisplay_black"
+        android:inputType="text"
+        android:paddingTop="20dp"
+        android:text="@string/lblinvite"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:translationX="-700dp"
+        android:translationY="570dp" />
+
+    <TextView
+        android:id="@+id/lblInfo"
+        android:layout_width="364dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/playfairdisplay_black"
+        android:inputType="text"
+        android:paddingTop="20dp"
+        android:text="@string/lblinfo"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:translationX="-1062dp"
+        android:translationY="720dp" />
+
+</LinearLayout>
