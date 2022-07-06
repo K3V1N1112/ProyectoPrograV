@@ -10,7 +10,7 @@
     android:backgroundTintMode="src_over"
     android:orientation="horizontal"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
+    android:paddingRight="15dp"
     tools:context=".InicioActivity">
 
     <TextView
