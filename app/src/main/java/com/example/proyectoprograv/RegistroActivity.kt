@@ -30,3 +30,5 @@ class RegistroActivity : AppCompatActivity() {
         Toast.makeText(this@RegistroActivity, "Bienvenido " + txtUser, Toast.LENGTH_SHORT).show()
     }
 }
+
+//prueba de funcionamiento Esteban
