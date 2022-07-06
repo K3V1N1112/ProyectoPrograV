@@ -34,3 +34,5 @@ class RegistroActivity : AppCompatActivity() {
 //prueba de funcionamiento Esteban
 
 //prueba de funcionamiento Kevin
+
+//prueba 2 esteban
