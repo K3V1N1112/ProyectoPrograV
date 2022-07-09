@@ -22,5 +22,11 @@ class InicioActivity : AppCompatActivity() {
             val intent: Intent = Intent(this, RegistroActivity::class.java)
             startActivity(intent)
         }
+
+        val btnInvite: Button = findViewById(R.id.btnInvite)
+        btnInvite.setOnClickListener{
+            val intent: Intent = Intent(this, ExploreActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

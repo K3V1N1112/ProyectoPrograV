@@ -13,4 +13,16 @@
     <string name="lblconfirmpass">Confirmar Contraseña</string>
     <string name="txtconfirmpass">Confirme su contraseña</string>
     <string name="lblregister">Registrarse con:</string>
+    <string name="title_activity_explore">ExploreActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Andrea Villalobos</string>
+    <string name="nav_header_subtitle">AndreVilla123@outlook.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configuración</string>
+
+    <string name="menu_home">Explorar</string>
+    <string name="menu_gallery">Perfil</string>
+    <string name="menu_slideshow">Favoritos</string>
+    <string name="menu_info">Acerca de</string>
 </resources>
