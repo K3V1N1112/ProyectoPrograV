@@ -25,4 +25,18 @@
     <string name="menu_gallery">Perfil</string>
     <string name="menu_slideshow">Favoritos</string>
     <string name="menu_info">Acerca de</string>
+    
+    
+    <!-- Datos Pefil-->
+
+    <string name="PerfilUsuario">Perfil de Usuario</string>
+    <string name="NombreUsuario">Nombre de Usuario:</string>
+    <string name="Correo">Correo Electronico:</string>
+    <string name="Contrasena">Contrasena:</string>
+    <string name="botonGuardar">Guardar</string>
+
+
+    <!-- Acerca de -->
+
+    <string name="AcercaDe">Acerca de</string>
 </resources>
