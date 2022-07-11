@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.gallery.GalleryFragment">
+    tools:context=".ui.settings.SettingsFragment">
 
 <!--    <TextView-->
-<!--        android:id="@+id/text_gallery"-->
+<!--        android:id="@+id/text_settings"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        android:layout_marginStart="8dp"-->
@@ -32,51 +32,111 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="-360dp"
                 android:fontFamily="@font/playfairdisplay_bold"
-                android:text="@string/PerfilUsuario"
+                android:text="@string/Configuracion"
                 android:textColor="#000"
-                android:textSize="30sp">
-
-            </TextView>
-
-            <!--Imagen del perfil de usuario-->
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/playfairdisplay_bold"
-                android:src="@drawable/perfilmujer" />
+                android:textSize="30sp"></TextView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginLeft="-230dp"
                 android:fontFamily="@font/playfairdisplay_bold"
-                android:text="@string/NombreUsuario"
+                android:text="@string/ModoOscuro"
                 android:textColor="#000"
-                android:textSize="20dp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="35dp"
-                android:fontFamily="@font/playfairdisplay_regular"
-                android:hint="*Se muestra el nombre del usuario"
                 android:textSize="20dp"
+                android:translationY="-250dp" />
+
+            <Switch
+                android:id="@+id/switchModoOscuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:translationX="100dp"
+                android:translationY="-252dp"
                 tools:ignore="TouchTargetSizeCheck" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-174dp"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/Brillo"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:translationY="-160dp" />
+
+            <SeekBar
+                android:id="@+id/barrabrillo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:translationX="140dp"
+                android:translationY="285dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-174dp"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/Notificaciones"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:translationY="-70dp" />
+
+            <CheckBox
+                android:id="@+id/Notificaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:translationX="100dp"
+                android:translationY="-72dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-174dp"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/Idioma"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:translationX="11dp"
+                android:translationY="20dp" />
+
+            <Spinner
+                android:id="@+id/spinnerIdioma"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:translationX="120dp"
+                android:translationY="460dp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-174dp"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/Ayuda"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:translationX="-31dp"
+                android:translationY="120dp" />
+
+            <CheckBox
+                android:id="@+id/ayuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:translationX="140dp"
+                android:translationY="120dp"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -86,7 +146,7 @@
                 android:layout_marginTop="25dp"
                 android:fontFamily="@font/playfairdisplay_bold"
                 android:text="@string/Correo"
-                android:textColor="#000"
+                android:textColor="@android:color/transparent"
                 android:textSize="20dp" />
 
             <EditText

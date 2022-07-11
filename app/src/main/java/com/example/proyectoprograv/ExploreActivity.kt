@@ -1,7 +1,9 @@
 package com.example.proyectoprograv
+import android.content.ClipData
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -15,6 +17,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.view.menu.MenuView
 import com.example.proyectoprograv.databinding.ActivityExploreBinding
 
 class ExploreActivity : AppCompatActivity() {
@@ -30,17 +33,17 @@ private lateinit var binding: ActivityExploreBinding
 
         setSupportActionBar(binding.appBarExplore.toolbar)
 
-        binding.appBarExplore.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
+//        binding.appBarExplore.fab.setOnClickListener { view ->
+//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                    .setAction("Action", null).show()
+//        }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_explore)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_info), drawerLayout)
+            R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_info, R.id.nav_settings), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
@@ -67,4 +70,5 @@ private lateinit var binding: ActivityExploreBinding
         val txtUser = findViewById<TextView>(R.id.user).text
         Toast.makeText(this@ExploreActivity, "" + txtUser + " ha cerrado sesión", Toast.LENGTH_SHORT).show()
     }
+
 }

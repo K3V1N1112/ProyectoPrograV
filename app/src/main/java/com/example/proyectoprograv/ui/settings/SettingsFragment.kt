@@ -1,21 +1,21 @@
-package com.example.proyectoprograv.ui.slideshow
+package com.example.proyectoprograv.ui.settings
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.ListView
-import android.widget.Spinner
+import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.proyectoprograv.R
-import com.example.proyectoprograv.databinding.FragmentSlideshowBinding
+import com.example.proyectoprograv.databinding.FragmentSettingsBinding
 
-class SlideshowFragment : Fragment() {
+class SettingsFragment : Fragment() {
 
-private var _binding: FragmentSlideshowBinding? = null
+private var _binding: FragmentSettingsBinding? = null
   // This property is only valid between onCreateView and
   // onDestroyView.
   private val binding get() = _binding!!
@@ -25,24 +25,23 @@ private var _binding: FragmentSlideshowBinding? = null
     container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View {
-    val slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
+    val galleryViewModel =
+            ViewModelProvider(this).get(SettingsViewModel::class.java)
 
-    _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+    _binding = FragmentSettingsBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
-//    val textView: TextView = binding.textSlideshow
-//    slideshowViewModel.text.observe(viewLifecycleOwner) {
+//    val textView: TextView = binding.textGallery
+//    galleryViewModel.text.observe(viewLifecycleOwner) {
 //      textView.text = it
 //    }
 
     return root
   }
 
-
-
 override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
 }

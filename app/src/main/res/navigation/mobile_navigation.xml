@@ -6,6 +6,11 @@
     app:startDestination="@+id/nav_home">
 
     <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.proyectoprograv.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
         android:id="@+id/nav_home"
         android:name="com.example.proyectoprograv.ui.home.HomeFragment"
         android:label="@string/menu_home"

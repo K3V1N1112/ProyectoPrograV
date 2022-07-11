@@ -107,13 +107,6 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:text="Esteban Leiva"/>
-
-
-
-
-
-
-
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

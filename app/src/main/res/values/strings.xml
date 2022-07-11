@@ -25,18 +25,31 @@
     <string name="menu_gallery">Perfil</string>
     <string name="menu_slideshow">Favoritos</string>
     <string name="menu_info">Acerca de</string>
-    
+    <string name="menu_settings">Configuración</string>
     
     <!-- Datos Pefil-->
 
     <string name="PerfilUsuario">Perfil de Usuario</string>
     <string name="NombreUsuario">Nombre de Usuario:</string>
     <string name="Correo">Correo Electronico:</string>
-    <string name="Contrasena">Contrasena:</string>
+    <string name="Contrasena">Contraseña:</string>
     <string name="botonGuardar">Guardar</string>
 
 
     <!-- Acerca de -->
 
     <string name="AcercaDe">Acerca de</string>
+
+    <!-- Favoritos -->
+
+    <string name="Favoritos">Favoritos</string>
+
+    <!-- Configuracion -->
+
+    <string name="Configuracion">Configuración</string>
+    <string name="ModoOscuro">Modo Oscuro</string>
+    <string name="Brillo">Brillo</string>
+    <string name="Notificaciones">Notificaciones</string>
+    <string name="Idioma">Idioma</string>
+    <string name="Ayuda">Ayuda</string>
 </resources>

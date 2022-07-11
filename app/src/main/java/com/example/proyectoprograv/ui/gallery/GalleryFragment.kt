@@ -4,9 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.proyectoprograv.R
 import com.example.proyectoprograv.databinding.FragmentGalleryBinding
 
 class GalleryFragment : Fragment() {
@@ -31,11 +35,20 @@ private var _binding: FragmentGalleryBinding? = null
 //    galleryViewModel.text.observe(viewLifecycleOwner) {
 //      textView.text = it
 //    }
+
+      val btnGuardar: Button = binding.btnGuardar
+      btnGuardar.setOnClickListener{
+          save()
+      }
     return root
   }
 
 override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    private fun save(){
+        Toast.makeText(activity, "Datos Guardados", Toast.LENGTH_SHORT).show()
     }
 }

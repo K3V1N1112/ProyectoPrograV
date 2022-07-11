@@ -68,20 +68,6 @@
         android:translationY="570dp"
         android:background="@android:color/transparent"/>
 
-<!--    <TextView-->
-<!--        android:id="@+id/lblInvite"-->
-<!--        android:layout_width="364dp"-->
-<!--        android:layout_height="65dp"-->
-<!--        android:fontFamily="@font/playfairdisplay_black"-->
-<!--        android:inputType="text"-->
-<!--        android:paddingTop="20dp"-->
-<!--        android:text="@string/lblinvite"-->
-<!--        android:textAlignment="center"-->
-<!--        android:textColor="#FFFFFF"-->
-<!--        android:textSize="20sp"-->
-<!--        android:translationX="-700dp"-->
-<!--        android:translationY="570dp" />-->
-
     <TextView
         android:id="@+id/lblInfo"
         android:layout_width="364dp"

@@ -6,4 +6,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.slideshow.SlideshowFragment" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B9DDBE"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/Favoritos"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:textSize="35dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinnerFavorites"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="35dp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></Spinner>
+            
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
