@@ -7,17 +7,128 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment" >
 
-    <TextView
-        android:id="@+id/text_home"
+<!--    <TextView-->
+<!--        android:id="@+id/text_home"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent" />-->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgMaps"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/maps" />
+
+            <EditText
+                android:id="@+id/txtLocation"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#000000"
+                android:gravity="center"
+                android:hint="Buscar una localidad"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="#D5FFFFFF"
+                tools:ignore="TouchTargetSizeCheck"
+                />
+
+            <ImageButton
+                android:id="@+id/imgButton"
+                android:scaleType="fitXY"
+                android:padding="0dp"
+                android:background="#0000"
+                android:layout_width="368dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="-330dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/imagen5"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imgButton1"
+                android:scaleType="fitXY"
+                android:padding="0dp"
+                android:background="#0000"
+                android:layout_width="368dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="-368dp"
+                android:layout_marginTop="300dp"
+                android:src="@drawable/imagen6"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imgButton2"
+                android:scaleType="fitXY"
+                android:padding="0dp"
+                android:background="#0000"
+                android:layout_width="368dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="-368dp"
+                android:layout_marginTop="530dp"
+                android:src="@drawable/imagen7"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#168F29"
+                android:fontFamily="@font/playfairdisplay_black"
+                android:text="Ver más"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginLeft="-368dp"
+                android:layout_marginTop="760dp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-368dp"
+                android:layout_marginTop="830dp"
+                android:fontFamily="@font/playfairdisplay_italic"
+                android:text="Costa Rica es conocida por ser una de las reservas naturales mejor conservadas del planeta, atrevete a conocerla."
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/lblCopy"
+                android:layout_width="450dp"
+                android:layout_height="70dp"
+                android:fontFamily="@font/playfairdisplay_black"
+                android:inputType="text"
+                android:paddingTop="20dp"
+                android:textAlignment="center"
+                android:text="@string/lblCopy"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="#168F29"
+                android:layout_marginLeft="-430dp"
+                android:layout_marginTop="1100dp"/>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

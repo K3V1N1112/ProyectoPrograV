@@ -8,6 +8,7 @@
     <string name="lblpassrec">Olvidó su contraseña?</string>
     <string name="lblinvite">continuar como invitado</string>
     <string name="lblinfo">Acerca de | Contáctanos | Políticas</string>
+    <string name="lblCopy">Copyright 2022 Derechos Reservados</string>
     <string name="lblemail">Correo Electrónico</string>
     <string name="txtemail">Ingrese su correo electrónico</string>
     <string name="lblconfirmpass">Confirmar Contraseña</string>
@@ -21,7 +22,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Configuración</string>
 
-    <string name="menu_home">Explorar</string>
+    <string name="menu_home">PaseandoCR</string>
     <string name="menu_gallery">Perfil</string>
     <string name="menu_slideshow">Favoritos</string>
     <string name="menu_info">Acerca de</string>
