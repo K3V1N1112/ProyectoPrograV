@@ -22,11 +22,12 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Configuración</string>
 
-    <string name="menu_home">PaseandoCR</string>
+    <string name="menu_home">Explorar</string>
     <string name="menu_gallery">Perfil</string>
     <string name="menu_slideshow">Favoritos</string>
     <string name="menu_info">Acerca de</string>
     <string name="menu_settings">Configuración</string>
+    <string name="menu_place">Lugares</string>
     
     <!-- Datos Pefil-->
 

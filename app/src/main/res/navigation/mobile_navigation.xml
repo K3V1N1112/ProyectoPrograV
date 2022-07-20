@@ -33,4 +33,10 @@
         android:name="com.example.proyectoprograv.ui.info.InfoFragment"
         android:label="@string/menu_info"
         tools:layout="@layout/fragment_info" />
+
+    <fragment
+        android:id="@+id/nav_place"
+        android:name="com.example.proyectoprograv.ui.place.PlaceFragment"
+        android:label="@string/menu_place"
+        tools:layout="@layout/fragment_place" />
 </navigation>

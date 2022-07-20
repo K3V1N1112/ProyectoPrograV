@@ -18,7 +18,10 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.view.menu.MenuView
+import androidx.fragment.app.FragmentManager
 import com.example.proyectoprograv.databinding.ActivityExploreBinding
+import com.example.proyectoprograv.ui.gallery.GalleryFragment
+import kotlinx.coroutines.android.awaitFrame
 
 class ExploreActivity : AppCompatActivity() {
 

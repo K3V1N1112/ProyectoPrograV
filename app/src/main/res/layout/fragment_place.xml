@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.place.PlaceFragment">
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_settings"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent" />-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B9DDBE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="-360dp"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/Configuracion"
+                android:textColor="#000"
+                android:textSize="30sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-230dp"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/ModoOscuro"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:translationY="-250dp" />
+
+            <Switch
+                android:id="@+id/switchModoOscuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:translationX="100dp"
+                android:translationY="-252dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-174dp"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/Brillo"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:translationY="-160dp" />
+
+            <SeekBar
+                android:id="@+id/barrabrillo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:translationX="140dp"
+                android:translationY="285dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-174dp"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/Notificaciones"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:translationY="-70dp" />
+
+            <CheckBox
+                android:id="@+id/Notificaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:translationX="100dp"
+                android:translationY="-72dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-174dp"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/Idioma"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:translationX="11dp"
+                android:translationY="20dp" />
+
+            <Spinner
+                android:id="@+id/spinnerIdioma"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:translationX="120dp"
+                android:translationY="460dp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-174dp"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/Ayuda"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:translationX="-31dp"
+                android:translationY="120dp" />
+
+            <CheckBox
+                android:id="@+id/ayuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:translationX="140dp"
+                android:translationY="120dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/Correo"
+                android:textColor="@android:color/transparent"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="35dp"
+                android:fontFamily="@font/playfairdisplay_regular"
+                android:hint="*Se muestra el correo electrónico"
+                android:textSize="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/Contrasena"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="35dp"
+                android:fontFamily="@font/playfairdisplay_regular"
+                android:hint="Digite su nueva contrasena"
+                android:textSize="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="35dp"
+                android:fontFamily="@font/playfairdisplay_regular"
+                android:hint="Confirme su nueva contrasena"
+                android:textSize="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/roundstyle"
+                android:backgroundTint="#168F29"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:text="@string/botonGuardar"
+                android:textColor="#ffff"
+                android:textSize="20dp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
