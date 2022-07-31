@@ -1,27 +1,20 @@
 package com.example.proyectoprograv
-import android.content.ClipData
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.view.menu.MenuView
-import androidx.fragment.app.FragmentManager
 import com.example.proyectoprograv.databinding.ActivityExploreBinding
-import com.example.proyectoprograv.ui.gallery.GalleryFragment
-import kotlinx.coroutines.android.awaitFrame
+import com.google.android.material.navigation.NavigationView
 
 class ExploreActivity : AppCompatActivity() {
 
@@ -68,6 +61,11 @@ private lateinit var binding: ActivityExploreBinding
         val navController = findNavController(R.id.nav_host_fragment_content_explore)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+//    private fun login(){
+//        val usuario = intent.extras!!.getString("usuario")
+//        findViewById<TextView>(R.id.txtUser).setText(usuario)
+//    }
 
     private fun logout(){
         val txtUser = findViewById<TextView>(R.id.user).text

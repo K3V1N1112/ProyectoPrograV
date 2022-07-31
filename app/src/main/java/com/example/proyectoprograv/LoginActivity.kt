@@ -1,12 +1,12 @@
 package com.example.proyectoprograv
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +16,10 @@ class LoginActivity : AppCompatActivity() {
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         btnLogin.setOnClickListener() {
             login()
+            val txtUser = findViewById<EditText>(R.id.txtUser).text
+            val usuario = Intent(this, ExploreActivity::class.java)
+            usuario.putExtra("usuario", txtUser)
+            startActivity(usuario)
         }
 
         val btnBack: ImageButton = findViewById(R.id.imgBtnBack)

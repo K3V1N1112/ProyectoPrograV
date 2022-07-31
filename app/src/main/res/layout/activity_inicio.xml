@@ -82,4 +82,18 @@
         android:translationX="-1062dp"
         android:translationY="720dp" />
 
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#168F29"
+        android:fontFamily="@font/playfairdisplay_black"
+        android:text="Salir"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:translationX="-1300dp"
+        android:translationY="640dp" />
+
 </LinearLayout>

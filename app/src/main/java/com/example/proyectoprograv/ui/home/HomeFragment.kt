@@ -14,12 +14,11 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
 import com.example.proyectoprograv.ExploreActivity
 import com.example.proyectoprograv.InicioActivity
+import com.example.proyectoprograv.PlaceActivity
 import com.example.proyectoprograv.R
 import com.example.proyectoprograv.databinding.FragmentHomeBinding
 import com.example.proyectoprograv.ui.gallery.GalleryFragment
 import com.example.proyectoprograv.ui.gallery.GalleryViewModel
-import com.example.proyectoprograv.ui.place.PlaceFragment
-import com.example.proyectoprograv.ui.place.PlaceViewModel
 import com.example.proyectoprograv.ui.settings.SettingsFragment
 
 class HomeFragment : Fragment() {
@@ -48,17 +47,10 @@ private var _binding: FragmentHomeBinding? = null
 
       val btnPlace: ImageButton = binding.imgButton0
       btnPlace.setOnClickListener{
-          val transaction = activity?.supportFragmentManager?.beginTransaction()
-          if (transaction != null) {
-              transaction.replace(R.id.nav_host_fragment_content_explore, PlaceFragment())
-          }
-          if (transaction != null) {
-              transaction.disallowAddToBackStack()
-          }
-          if (transaction != null) {
-              transaction.commit()
-          }
+          val intent: Intent = Intent(activity, PlaceActivity::class.java)
+          startActivity(intent)
       }
+
     return root
   }
 

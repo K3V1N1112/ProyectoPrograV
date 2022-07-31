@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9DDBE"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:layout_marginTop="50dp"
+        android:id="@+id/imgBtnBack"
+        android:layout_width="78dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:translationX="-15dp"
+        android:translationY="20dp"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        app:tint="#000000"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PaseandoCR"
+        android:fontFamily="@font/playfairdisplay_black"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:translationY="-30dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="411dp"
+        android:layout_height="309dp"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monte Verde"
+        android:fontFamily="@font/playfairdisplay_black"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Es uno de los lugares más visitados de Costa Rica y se ubica al Norte de Puntarenas. Está repleto de nuevas y divertidas experiencias que toda la familia disfrutará."
+        android:fontFamily="@font/playfairdisplay_regular"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#168F29"
+        android:fontFamily="@font/playfairdisplay_black"
+        android:text="Descubre éste lugar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
