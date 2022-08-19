@@ -21,13 +21,13 @@ class RegistroActivity : AppCompatActivity() {
 
         val btnRegister: Button = findViewById(R.id.btnRegister)
         btnRegister.setOnClickListener() {
-            regitro()
+            registro()
             val intent: Intent = Intent(this, InicioActivity::class.java)
             startActivity(intent)
         }
     }
 
-    public fun regitro() {
+    public fun registro() {
         val txtUsuario = findViewById<EditText>(R.id.txtUser).text
         val txtCorreo = findViewById<EditText>(R.id.txtEmail).text
         val txtContrasena = findViewById<EditText>(R.id.txtPass).text

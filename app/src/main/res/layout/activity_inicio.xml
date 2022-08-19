@@ -68,20 +68,6 @@
         android:translationY="570dp"
         android:background="@android:color/transparent"/>
 
-    <TextView
-        android:id="@+id/lblInfo"
-        android:layout_width="364dp"
-        android:layout_height="65dp"
-        android:fontFamily="@font/playfairdisplay_black"
-        android:inputType="text"
-        android:paddingTop="20dp"
-        android:text="@string/lblinfo"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:translationX="-1062dp"
-        android:translationY="720dp" />
-
     <Button
         android:id="@+id/btnSalir"
         android:layout_width="110dp"
@@ -93,7 +79,33 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        android:translationX="-1300dp"
+        android:translationX="-920dp"
         android:translationY="640dp" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/playfairdisplay_black"
+        android:text="Configuración       |"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:translationX="-1150dp"
+        android:translationY="710dp"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/playfairdisplay_black"
+        android:text="Acerca de"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:translationX="-1220dp"
+        android:translationY="710dp"
+        android:background="@android:color/transparent"/>
 
 </LinearLayout>
