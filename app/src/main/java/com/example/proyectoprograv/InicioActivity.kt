@@ -49,7 +49,7 @@ class InicioActivity : AppCompatActivity() {
         val btnSalir = findViewById<View>(R.id.btnSalir) as Button
         btnSalir.setOnClickListener {
             val dialogo1 = AlertDialog.Builder(this)
-            dialogo1.setTitle("¿Desea salir?")
+            dialogo1.setTitle("Salir")
             dialogo1.setMessage("¿Realmente desea salir de la aplicación?")
             dialogo1.setCancelable(false)
             dialogo1.setNegativeButton(

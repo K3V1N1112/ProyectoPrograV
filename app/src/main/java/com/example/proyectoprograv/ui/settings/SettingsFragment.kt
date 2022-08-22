@@ -55,8 +55,10 @@ override fun onDestroyView() {
 
     public fun version() {
         val txtVersion: EditText = binding.txtVersion
+        val prueba = txtVersion.text
         val bd = activity?.openOrCreateDatabase("version", AppCompatActivity.MODE_PRIVATE, null)
-        bd?.execSQL("insert into version(ver) values('$txtVersion')")
+        bd?.execSQL("update version set ver = $prueba where _id like '1'")
+        //bd?.execSQL("insert into version(ver) values('$txtVersion')")
         Toast.makeText(activity, "Version cambiada con éxito", Toast.LENGTH_LONG).show()
         binding.txtVersion.setText("")
     }

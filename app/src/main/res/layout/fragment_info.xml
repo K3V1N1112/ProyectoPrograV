@@ -107,6 +107,26 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:text="Esteban Leiva"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version del App"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="35dp"/>
+
+            <TextView
+                android:id="@+id/lblVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="prueba"
+                android:fontFamily="@font/playfairdisplay_bold"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="35dp"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

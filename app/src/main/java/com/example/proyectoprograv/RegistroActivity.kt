@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
 class RegistroActivity : AppCompatActivity() {
@@ -21,10 +22,28 @@ class RegistroActivity : AppCompatActivity() {
 
         val btnRegister: Button = findViewById(R.id.btnRegister)
         btnRegister.setOnClickListener() {
-            registro()
-            val intent: Intent = Intent(this, InicioActivity::class.java)
-            startActivity(intent)
+            val dialogo1 = AlertDialog.Builder(this)
+            dialogo1.setTitle("Registrarse")
+            dialogo1.setMessage("¿Desea registrarse con la informacion anterior?")
+            dialogo1.setCancelable(false)
+            dialogo1.setNegativeButton(
+                "No"
+            ) { dialogo1, id -> no() }
+            dialogo1.setPositiveButton(
+                "Si"
+            ) { dialogo1, id -> si() }
+            dialogo1.show()
         }
+    }
+
+    private fun si() {
+        registro()
+        val intent: Intent = Intent(this, InicioActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun no() {
+        Toast.makeText(this, "No se registró, intente nuevamente", Toast.LENGTH_SHORT).show()
     }
 
     public fun registro() {
