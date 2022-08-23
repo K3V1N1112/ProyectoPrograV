@@ -53,7 +53,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/playfairdisplay_bold"
-                android:src="@drawable/perfilmujer" />
+                android:src="@drawable/perfil" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -67,6 +67,7 @@
                 android:textSize="20dp" />
 
             <EditText
+                android:id="@+id/txtUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
@@ -90,6 +91,7 @@
                 android:textSize="20dp" />
 
             <EditText
+                android:id="@+id/txtCorreo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
@@ -112,6 +114,7 @@
                 android:textSize="20dp" />
 
             <EditText
+                android:id="@+id/txtPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"

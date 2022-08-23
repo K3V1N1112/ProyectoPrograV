@@ -38,24 +38,34 @@ class RegistroActivity : AppCompatActivity() {
 
     private fun si() {
         registro()
-        val intent: Intent = Intent(this, InicioActivity::class.java)
-        startActivity(intent)
     }
 
     private fun no() {
         Toast.makeText(this, "No se registró, intente nuevamente", Toast.LENGTH_SHORT).show()
     }
 
-    public fun registro() {
+    fun registro(){
         val txtUsuario = findViewById<EditText>(R.id.txtUser).text
         val txtCorreo = findViewById<EditText>(R.id.txtEmail).text
         val txtContrasena = findViewById<EditText>(R.id.txtPass).text
-        val bd = openOrCreateDatabase("usuarios", MODE_PRIVATE, null)
-        bd.execSQL("insert into usuarios(usuario, correo, contrasena) values('$txtUsuario', '$txtCorreo', '$txtContrasena')")
-        Toast.makeText(this@RegistroActivity, "Registrado con Éxito", Toast.LENGTH_LONG).show()
-        findViewById<EditText>(R.id.txtUser).setText("")
-        findViewById<EditText>(R.id.txtEmail).setText("")
-        findViewById<EditText>(R.id.txtPass).setText("")
-        findViewById<EditText>(R.id.txtConfirmPass).setText("")
+        val txtReContrasena = findViewById<EditText>(R.id.txtConfirmPass).text
+
+        if(txtUsuario.isNotEmpty() && txtCorreo.isNotEmpty()  && txtContrasena.isNotEmpty() && txtReContrasena.isNotEmpty()){
+            val bd = openOrCreateDatabase("usuarios", MODE_PRIVATE, null)
+            bd.execSQL("insert into usuarios(usuario, correo, contrasena) values('$txtUsuario', '$txtCorreo', '$txtContrasena')")
+            Toast.makeText(this@RegistroActivity, "Registrado con Éxito", Toast.LENGTH_LONG).show()
+            findViewById<EditText>(R.id.txtUser).setText("")
+            findViewById<EditText>(R.id.txtEmail).setText("")
+            findViewById<EditText>(R.id.txtPass).setText("")
+            findViewById<EditText>(R.id.txtConfirmPass).setText("")
+            val intent = Intent(this, InicioActivity::class.java)
+            startActivity(intent)
+        }else{
+            Error()
+        }
+    }
+
+    fun Error(){
+        Toast.makeText(this,"Debe llenar todos los campos", Toast.LENGTH_SHORT).show()
     }
 }

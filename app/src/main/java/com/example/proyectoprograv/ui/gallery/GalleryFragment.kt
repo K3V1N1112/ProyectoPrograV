@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.proyectoprograv.R
@@ -51,4 +52,29 @@ override fun onDestroyView() {
     private fun save(){
         Toast.makeText(activity, "Datos Guardados", Toast.LENGTH_SHORT).show()
     }
+
+    override fun onResume() {
+        super.onResume()
+        val bd = activity?.openOrCreateDatabase("usuarios", AppCompatActivity.MODE_PRIVATE, null)
+        val user = bd?.rawQuery("select usuario, correo from usuarios where _id like '10'", null)
+        user?.moveToFirst()
+        val usuario = user?.getString(0)
+        val correo = user?.getString(1)
+        binding.txtUser.setText(usuario)
+        binding.txtCorreo.setText(correo)
+        user?.close()
+    }
+
+//    public fun actualizarDatos() {
+//        val txtUser: EditText = binding.txtUser
+//        val user = txtUser.text
+//        val txtCorreo: EditText = binding.txtCorreo
+//        val correo = txtCorreo.text
+//        val txtPass: EditText = binding.txtPass
+//        val pass = txtPass.text
+//        val bd = activity?.openOrCreateDatabase("usuarios", AppCompatActivity.MODE_PRIVATE, null)
+//        bd?.execSQL("update usuarios set usuario = $user, correo = $correo, contrasena = $pass where _id like '10'")
+//        Toast.makeText(activity, "Datos Guardados", Toast.LENGTH_SHORT).show()
+//        binding.txtPass.setText("")
+//    }
 }
