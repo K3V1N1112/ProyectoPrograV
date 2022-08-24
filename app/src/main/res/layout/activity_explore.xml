@@ -33,6 +33,6 @@
             android:text="Cerrar Sesión"
             android:textColor="#FFFFFF"
             android:translationX="65dp"
-            android:translationY="780dp" />
+            android:translationY="680dp" />
     </com.google.android.material.navigation.NavigationView>
 </androidx.drawerlayout.widget.DrawerLayout>

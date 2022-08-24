@@ -56,7 +56,7 @@ override fun onDestroyView() {
     override fun onResume() {
         super.onResume()
         val bd = activity?.openOrCreateDatabase("usuarios", AppCompatActivity.MODE_PRIVATE, null)
-        val user = bd?.rawQuery("select usuario, correo from usuarios where _id like '10'", null)
+        val user = bd?.rawQuery("select usuario, correo from usuarios where _id like '1'", null)
         user?.moveToFirst()
         val usuario = user?.getString(0)
         val correo = user?.getString(1)
